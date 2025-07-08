@@ -60,8 +60,7 @@ python3 __main__.py
         ```plaintext
         Error Message: You do not have authority about action : [NAS:View/getNASVolumeInstanceList].
         ```
-
-![alt text](static/image.png)
+    ![alt text](static/image.png)
 
 ### 고객사별 리소스 예외 처리
 - 특정 고객사의 경우, 일부 리소스 또는 API 호출이 제외됩니다.
