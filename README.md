@@ -64,7 +64,6 @@ python3 __main__.py
 
 ### 고객사별 리소스 예외 처리
 - 특정 고객사의 경우, 일부 리소스 또는 API 호출이 제외됩니다.
-    - `CUDTOMER_ID`: Classic 리소스 제외
 - 예외 처리 로직은 `api_manager.py` 또는 각 리소스 모듈(`nas_list.py`, `server_image_list.py` 등)에 구현되어 있습니다.
 
 ### VPC/Classic 환경 예외 처리
