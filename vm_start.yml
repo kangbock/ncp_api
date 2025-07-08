@@ -1,0 +1,24 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+variables:
+- group: NCPv2 variables
+
+trigger:
+- none
+
+schedules:
+- cron: '50 14 20,28-31 * *'
+  displayName: 매월 말일, 20일 23:50분 실행
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    sh ./vm_start.sh
