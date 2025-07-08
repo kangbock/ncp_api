@@ -31,7 +31,7 @@ python3 __main__.py
 - **데이터 수집**:
     - `api/*.py` 모든 모듈을 사용하여 리소스 목록 또는 메트릭을 수집합니다.
     - 고객사별로 특정 리소스 또는 API 호출이 제외될 수 있습니다. 
-        - 특정 리소스 제외 예: `CUSTOMER_ID`: ["api.postgresql_list.PostgreSQL.postgresql_list"]
+        - 특정 리소스 제외 예: "CUSTOMER_ID": ["api.postgresql_list.PostgreSQL.postgresql_list"]
         - 특정 환경 제외 예: 특정 고객사는 Classic 리소스 제외
     - VPC와 Classic 환경에 따라 다른 API를 호출합니다.
 - **JSON 파일 저장**: 수집된 데이터를 `json_util.py` 모듈을 사용하여 JSON 파일로 저장합니다.
