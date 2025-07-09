@@ -62,16 +62,6 @@ python3 __main__.py
         ```
         ![alt text](static/image.png)
 
-### 고객사별 리소스 예외 처리
-- 특정 고객사의 경우, 일부 리소스 또는 API 호출이 제외됩니다.
-- 예외 처리 로직은 `api_manager.py` 또는 각 리소스 모듈(`nas_list.py`, `server_image_list.py` 등)에 구현되어 있습니다.
-
-### VPC/Classic 환경 예외 처리
-- VPC와 Classic 환경에 따라 호출되는 API가 다릅니다.
-    - VPC: `/vnas/v2/getNasVolumeInstanceList`
-    - Classic: `/server/v2/getNasVolumeInstanceList`
-- 환경에 따라 적절한 API를 호출하며, 데이터 구조가 다를 경우 이를 처리하는 로직이 포함되어 있습니다.
-
 ## 파일 설명
 ### `__init__.py`
 - 패키지를 초기화하고 디렉토리 내 모듈이 올바르게 임포트될 수 있도록 설정합니다. 필요에 따라 패키지 수준 변수나 임포트를 포함할 수 있습니다.
